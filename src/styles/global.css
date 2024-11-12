@@ -36,3 +36,11 @@
     cursor: pointer;
     align-items: center;
 }
+
+.inputUnderline {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 307px;
+    height: 40px;
+}

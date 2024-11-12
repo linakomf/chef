@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="../styles/header.css">
 	<link rel="stylesheet" href="../styles/footer.css">
 	<link rel="stylesheet" href="../styles/categories.css">
+	<link rel="stylesheet" href="../styles/modal.css">
+
 </head>
 <body>
 <div class="container">
@@ -22,9 +24,29 @@
 			<a href="/recepts">Рекомендации</a>
 			<a href="/recepts">Избранное</a>
 			<a href="/recepts">О нас</a>
-			<a href="/recepts">Аккаунт</a>
+			<div style="color: #000" id="openModal">Аккаунт</div>
 		</nav>
 		<input type="text" placeholder="поиск" class="search">
+		<div class="authModal" id="authModal">
+			<img class="closebtn" src="../assets/images/close.png" alt="close">
+			<img width="350" src="../assets/images/register.png" alt="">
+			<input class="inputUnderline" type="text" placeholder="Имя ">
+			<input class="inputUnderline" type="text" placeholder="Фамилия  ">
+			<input class="inputUnderline" type="text" placeholder="Email ">
+			<input class="inputUnderline" type="text" placeholder="Придумайте пароль ">
+			<input class="inputUnderline" type="text" placeholder="Повторите пароль ">
+			<button class="buttonBrawn">Регистрация</button>
+			<div id="hasAccBtn" style="text-decoration: underline; cursor: pointer; color: gray">У вас есть аккаунт?</div>
+		</div>
+		<div class="authModal" id="registerModal">
+			<img class="closebtn" src="../assets/images/close.png" alt="close">
+			<img width="350" src="../assets/images/register.png" alt="">
+			<input class="inputUnderline" type="text" placeholder="Email ">
+			<input class="inputUnderline" type="text" placeholder="Введите пароль ">
+			<button class="buttonBrawn">Войти</button>
+			<div id="notHasAcc" style="text-decoration: underline; cursor: pointer; color: gray">Нет аккаунта?</div>
+		</div>
+		<div id="backdrop"></div>
 	</header>
 	<main style="margin-top: 32px">
 		<h1 style="margin-bottom: 16px">Завтрак</h1>
@@ -69,5 +91,6 @@
 </footer>
 <script src="../db/categoriesDb.js"></script>
 <script src="../scripts/categories.js"></script>
+<script src="../scripts/modal.js"></script>
 </body>
 </html>
