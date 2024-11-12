@@ -1,0 +1,19 @@
+.products {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 24px;
+}
+
+.product-card {
+	width: fit-content;
+	border: 1px solid gray;
+	padding: 12px;
+	border-radius: 12px;
+}
+
+.product-card > img {
+}
+
+.product-card > p {
+	padding-bottom: 16px;
+}
