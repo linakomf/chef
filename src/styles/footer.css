@@ -2,15 +2,13 @@ footer {
 	margin-top: 56px;
 	display: flex;
 	flex-direction: column;
-	gap: 36px;
 	width: 100%;
-	padding: 56px 0;
+	padding: 0 0 56px;
 	background-color: #C0A690;
 	align-items: center;
 }
 
 footer > .logo {
-
 }
 
 a {
@@ -21,12 +19,14 @@ footer > .links {
 	display: flex;
 	align-items: center;
 	gap: 48px;
+	margin-bottom: 26px;
 }
 
 footer > .socials {
 	display: flex;
 	align-items: center;
 	gap: 24px;
+	margin-bottom: 26px;
 }
 
 footer > .privacy {
